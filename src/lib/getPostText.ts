@@ -1,4 +1,10 @@
 export default async function getPostText() {
-  // Generate the text for your post here. You can return a string or a promise that resolves to a string
-  return "Hello from the Bluesky API";
+  const response = await fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  const data = await response.json();
+  const { joke } = data;
+  return joke;
 }
