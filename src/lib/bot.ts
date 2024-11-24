@@ -6,10 +6,10 @@ import type {
 } from "@atproto/api";
 import { AtpAgent, RichText } from "@atproto/api";
 
-type BotOptions = {
+interface BotOptions {
   service: string | URL;
   dryRun: boolean;
-};
+}
 
 export default class Bot {
   #agent;
