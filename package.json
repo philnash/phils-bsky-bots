@@ -10,7 +10,8 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "start": "node .",
-    "dev": "node --env-file=.env . --dry-run"
+    "dev": "node --env-file=.env .",
+    "dev:dry-run": "node --env-file=.env . --dry-run"
   },
   "keywords": [
     "bsky",
