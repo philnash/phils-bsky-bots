@@ -10,7 +10,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "start": "node .",
-    "dev": "nodenv ."
+    "dev": "node --env-file=.env . --dry-run"
   },
   "keywords": [
     "bsky",
@@ -30,7 +30,6 @@
     "@typescript-eslint/parser": "^5.59.1",
     "eslint": "^8.39.0",
     "eslint-plugin-sonarjs": "^0.19.0",
-    "node-env-run": "^4.0.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
